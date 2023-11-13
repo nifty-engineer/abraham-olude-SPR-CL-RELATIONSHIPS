@@ -36,6 +36,11 @@ public class Song {
     public Song(String title) {
         this.title = title;
     }
+
+    public Song(long songId, Album album) {
+        this.songId = songId;
+        this.album = album;
+    }
     /**
      * A custom toString() is provided that avoids recursively serializing related entities.
      */

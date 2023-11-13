@@ -33,5 +33,7 @@ public class SongService {
         return songRepository.findAll();
     }
 
-
+    public Album getAlbum(long songId) {
+        return songRepository.findAlbumBySongId(songId);
+    }
 }

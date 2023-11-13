@@ -1,5 +1,6 @@
 package Lab.Repository;
 
+import Lab.Model.Album;
 import Lab.Model.Song;
 import org.springframework.data.jpa.repository.JpaRepository;
 /**
@@ -7,4 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface SongRepository extends JpaRepository<Song, Long> {
 
+    Album findAlbumBySongId(long sondId);
 }
